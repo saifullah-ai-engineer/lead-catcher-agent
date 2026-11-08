@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lead-catcher-agent"
+version = "0.1.0"
+description = "A LangGraph lead qualification agent for local service businesses, agencies, and clinics."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Saif Ullah", email = "saifullahrao089@gmail.com" }]
+keywords = ["langgraph", "lead-qualification", "ai-agents", "automation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "langgraph==1.2.20",
+]
+
+[project.urls]
+Homepage = "https://github.com/saifullah-ai-engineer/lead-catcher-agent"
+Repository = "https://github.com/saifullah-ai-engineer/lead-catcher-agent"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
